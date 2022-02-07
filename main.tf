@@ -13,7 +13,7 @@ module "vm" {
   source  = "Terraform-VMWare-Modules/vm/vsphere"
   version = "3.4.0"
   #  vmtemp    = "VM Template Name (Should Alrerady exist)"
-  vmtemp    = "171-CentOS8-Client1"
+  vmtemp    = "171-CentOS8-Client"
   instances = 3
   #  vmname    = ["171-CentOS8-Client2","172-CentOS-Client2", "173-CentOS8-Client3"]
   vmname       = "CentOS8-Client"
