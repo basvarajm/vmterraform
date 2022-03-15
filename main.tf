@@ -2,7 +2,7 @@
 provider "vsphere" {
   user           = "Administrator@vsphere.local"
   password       = "Pa55word"
-  vsphere_server = "192.168.1.199"
+  vsphere_server = "192.168.1.201"
 
   # if you have a self-signed cert
   allow_unverified_ssl = true
@@ -13,9 +13,9 @@ module "vm" {
   source  = "Terraform-VMWare-Modules/vm/vsphere"
   version = "3.4.0"
   #  vmtemp    = "VM Template Name (Should Alrerady exist)"
-  vmtemp    = "171-CentOS8-Client"
+  vmtemp    = "Centos8-Stream"
   instances = 3
-  #  vmname    = ["171-CentOS8-Client2","172-CentOS-Client2", "173-CentOS8-Client3"]
+  #  vmname    = ["171-CentOS8-Client1","172-CentOS-Client2", "173-CentOS8-Client3"]
   vmname       = "CentOS8-Client"
   vmnameformat = "%03d"
   #  vmrp      = "esxi/Resources - or name of a resource pool"
